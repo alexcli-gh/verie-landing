@@ -109,7 +109,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <div class="badge">🧪 A/B Testing for Everyone</div>
   <h1>A/B Test Any Website — No&nbsp;Code Required</h1>
   <p class="subhead">Stop waiting on developers. Edit any live page and test changes in 60 seconds.</p>
-  <form class="email-form" id="hero-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="hero-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: ab-testing">
+    <input type="hidden" name="_page" value="ab-testing">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/ab-testing.html?thanks=1">
     <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
     <button type="submit">Test Your First Page Free →</button>
   </form>
@@ -192,7 +196,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <p class="section-label">Get Started</p>
   <h2 class="section-title">Ready to run your first test?</h2>
   <p class="section-subtitle">Join the teams already testing faster. Free to start, no credit card required.</p>
-  <form class="email-form" id="bottom-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="bottom-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: ab-testing">
+    <input type="hidden" name="_page" value="ab-testing">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/ab-testing.html?thanks=1">
     <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
     <button type="submit">Test Your First Page Free →</button>
   </form>
@@ -224,5 +232,6 @@ document.querySelectorAll('.email-form').forEach(function(form){
   });
 });
 </script>
+<script>if(location.search.includes("thanks=1")){document.querySelectorAll(".email-form").forEach(f=>{f.style.display="none"});document.querySelectorAll(".form-success").forEach(s=>{s.style.display="block";s.textContent="🎉 You\x27re in! We\x27ll be in touch soon."})}</script>
 </body>
 </html>

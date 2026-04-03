@@ -67,7 +67,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <div class="badge">🎯 Website Personalization</div>
   <h1>Show Every Visitor a Page Built for&nbsp;Them</h1>
   <p class="subhead">Personalize any webpage by industry, company, or traffic source. No code changes.</p>
-  <form class="email-form" id="hero-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="hero-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: personalization">
+    <input type="hidden" name="_page" value="personalization">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/personalization.html?thanks=1">
     <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
     <button type="submit">Personalize Your First Page Free →</button>
   </form>
@@ -150,7 +154,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <p class="section-label">Get Started</p>
   <h2 class="section-title">Ready to personalize your site?</h2>
   <p class="section-subtitle">Stop showing every visitor the same page. Start converting more, today.</p>
-  <form class="email-form" id="bottom-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="bottom-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: personalization">
+    <input type="hidden" name="_page" value="personalization">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/personalization.html?thanks=1">
     <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
     <button type="submit">Personalize Your First Page Free →</button>
   </form>
@@ -179,5 +187,6 @@ document.querySelectorAll('.email-form').forEach(function(form){
   });
 });
 </script>
+<script>if(location.search.includes("thanks=1")){document.querySelectorAll(".email-form").forEach(f=>{f.style.display="none"});document.querySelectorAll(".form-success").forEach(s=>{s.style.display="block";s.textContent="🎉 You\x27re in! We\x27ll be in touch soon."})}</script>
 </body>
 </html>

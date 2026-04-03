@@ -67,7 +67,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <div class="badge">🏢 Built for Agencies</div>
   <h1>Edit Any Client Website Without Touching Their&nbsp;CMS</h1>
   <p class="subhead">One tool for every client site. WordPress, Webflow, Shopify — edit them all.</p>
-  <form class="email-form" id="hero-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="hero-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: agencies">
+    <input type="hidden" name="_page" value="agencies">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/agencies.html?thanks=1">
     <input type="email" name="email" placeholder="you@agency.com" required autocomplete="email">
     <button type="submit">Start Your Agency Trial Free →</button>
   </form>
@@ -150,7 +154,11 @@ footer{border-top:1px solid var(--card-border);padding:40px 24px}
   <p class="section-label">Get Started</p>
   <h2 class="section-title">Ready to scale your agency?</h2>
   <p class="section-subtitle">One tool. Every client. Every platform. No more waiting for CMS access.</p>
-  <form class="email-form" id="bottom-form" action="https://submit.verie.ai/signup" method="POST">
+  <form class="email-form" id="bottom-form" action="https://formsubmit.co/alex@verie.ai" method="POST">
+    <input type="hidden" name="_subject" value="Verie Signup: agencies">
+    <input type="hidden" name="_page" value="agencies">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://alexcli-gh.github.io/verie-landing/agencies.html?thanks=1">
     <input type="email" name="email" placeholder="you@agency.com" required autocomplete="email">
     <button type="submit">Start Your Agency Trial Free →</button>
   </form>
@@ -179,5 +187,6 @@ document.querySelectorAll('.email-form').forEach(function(form){
   });
 });
 </script>
+<script>if(location.search.includes("thanks=1")){document.querySelectorAll(".email-form").forEach(f=>{f.style.display="none"});document.querySelectorAll(".form-success").forEach(s=>{s.style.display="block";s.textContent="🎉 You\x27re in! We\x27ll be in touch soon."})}</script>
 </body>
 </html>
